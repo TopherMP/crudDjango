@@ -1,0 +1,228 @@
+:root{
+    --primarycolor:#ECDFCC;
+    --secColor: #697565;
+    --thirdColor:#3C3D37;
+    --fourColor: #181C14;
+    --hover: #739965;
+    --active:#91d37b;
+    --font: font-family(Montserrat);
+}   
+
+p,
+span {
+    color: rgba(0, 0, 0, 1);
+    text-transform: none;
+    line-break: auto;
+    overflow-wrap: initial;
+    white-space: break-spaces;
+    text-rendering: geometricPrecision;
+    caret-color: rgba(0, 0, 0, 1);
+    text-decoration: none;
+    letter-spacing: 0px;
+    font-size: 24px;
+    
+    font-style: normal;
+    font-weight: 400;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    min-width: 100%;
+    padding: 0;
+    font-family: Montserrat;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.text-node {
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+}
+
+/* Rectangle */
+.fondo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: var(--fourColor);
+}
+
+/* Rectangle */
+.fondogris {
+    display: flex;
+    flex-direction: row;
+    padding: 25px;
+    gap: 20px;
+    width: 95%;
+    height: 95%;
+    background: var(--thirdColor);
+    border-radius: 10px;
+}
+
+/* Rectangle */
+.azul{
+    width: 100%;
+    height: 100%;
+    background: var(--secColor);
+    border-radius: 10px;
+    padding: 20px;
+}
+.btnContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+.btnCrud{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.btnStates{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #009879;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007a63;
+}
+
+.button-group {
+    grid-column: span 2; /* Esto hace que el botón ocupe dos columnas */
+    display: flex;
+    justify-content: center;
+}
+
+
+.btn{
+    position: relative;
+    background-color: var(--primarycolor);
+    width: 150px;
+    height: 40px;
+    font-size: 24px;
+    font-family: "Montserrat";
+    font-weight: 400px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.btn:hover{
+    background-color: var(--hover);
+    color: white;
+}
+.btn:active{
+    background-color: var(--active);
+    color: black;
+}
+
+
+
+
+
+
+.gridView {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.styled-table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: left;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr:hover {
+    background-color: #f1f1f1;
+}
+
+.styled-table tbody td {
+    color: #333;
+}
+
+.styled-table td:nth-child(4) {
+    font-weight: bold;
+}

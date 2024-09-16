@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    
+    <title>CRUD</title>
+    
+</head>
+
+<body>
+
+    <div class="fondo">
+
+        <div class="fondogris">
+
+            <div class="azul">
+                <div class="form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Ingresar nombre">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="monto">Monto</label>
+                        <input id="monto" type="text" placeholder="Ingresar monto">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="fecha">Fecha</label>
+                        <input id="fecha" type="datetime-local">
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="estado">Estado</label>
+                        <select id="estado" class="comboBox">
+                            <option>...</option>
+                            <option>Pagado</option>
+                            <option>Pendiente</option>
+                            <option>Cancelado</option>
+                        </select>
+                    </div>
+                
+                    <div class="form-group button-group">
+                        <button>&#128269;Buscar</button>
+                    </div>
+                </div>
+                <div class="gridView">
+                    <table class="styled-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Monto</th>
+                                <th>Fecha</th>
+                                <th>Estado</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Juan Pérez</td>
+                                <td>$500</td>
+                                <td>12/09/2024</td>
+                                <td>Pagado</td>
+                            </tr>
+                            <tr>
+                                <td>María López</td>
+                                <td>$350</td>
+                                <td>10/09/2024</td>
+                                <td>Pendiente</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+
+            </div>
+
+            <div class="btnContainer">
+
+                <div class="btnCrud">
+                    <input class="btn" type="button" value="Clientes">
+                    <input class="btn" type="button" value="Añadir">
+                    <input class="btn" type="button" value="Editar">
+                    <input class="btn" type="button" value="Eliminar">
+                </div>
+
+                <div class="btnStates">
+                    <input class="btn" type="button" value="Pagado">
+                    <input class="btn" type="button" value="Pendiente">
+                    <input class="btn" type="button" value="Cancelado">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+
+</html>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
